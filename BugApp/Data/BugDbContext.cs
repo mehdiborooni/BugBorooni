@@ -1,5 +1,5 @@
 ﻿
-using BugPages.Models;
+using BugApp.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace BugApp.Data
