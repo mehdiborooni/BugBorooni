@@ -1,0 +1,8 @@
+﻿@model IList<BugPages.Models.Bug>
+<h2>BugIndex</h2>
+<hr/>
+
+@foreach (var bug in Model)
+{
+    <p>@bug.Id @bug.Name</p>
+}
