@@ -46,6 +46,7 @@ namespace BugApp.Controllers
         [HttpPost]
         public IActionResult Create(Bug model)
         {
+            model.TimeCreated = DateTime.Now;
             _db.Bugs.Add(model);
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
