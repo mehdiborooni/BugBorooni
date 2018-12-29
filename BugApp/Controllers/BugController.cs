@@ -67,7 +67,7 @@ namespace BugApp.Controllers
         [HttpPost]
         public IActionResult Edit(Bug model)
         {
-            _db.Entry(model).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _db.Entry(model).State = EntityState.Modified;
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
