@@ -1,0 +1,15 @@
+﻿@model BugApp.Models.Bug
+
+<h2>Delete</h2>
+
+<hr/>
+
+<form asp-action="Delete" asp-controller="Bug" method="post">
+    
+    <p>ID: @Model.Id</p>
+    <p>Name: @Model.Name</p>
+    <p>
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" asp-controller="Bug">Back to list</a>
+    </p>
+</form>

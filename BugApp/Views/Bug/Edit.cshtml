@@ -1,0 +1,14 @@
+﻿@model BugApp.Models.Bug
+
+<h2>Edit</h2>
+
+<hr/>
+
+<form asp-action="Edit" asp-controller="Bug" method="post">
+    
+    
+    <p>
+        <button type="submit" class="btn btn-success">Save</button>
+        <a asp-action="Index" asp-controller="Bug">Back to list</a>
+    </p>
+</form>

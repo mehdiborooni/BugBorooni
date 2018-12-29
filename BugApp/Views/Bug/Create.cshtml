@@ -1,0 +1,18 @@
+﻿@model BugApp.Models.Bug
+
+<h2>Create</h2>
+
+<hr />
+
+<form asp-action="Create" asp-controller="Bug" method="post">
+    <p>
+        <input asp-for="Id" class="form-control" placeholder="Id" />
+    </p>
+    <p>
+        <input asp-for="Name" class="form-control" placeholder="Name" />
+    </p>
+    <p>
+        <button type="submit" class="btn btn-success">Save</button>
+        <a asp-action="Index" asp-controller="Bug">Back to list</a>
+    </p>
+</form>
