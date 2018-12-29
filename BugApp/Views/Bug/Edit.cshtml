@@ -1,12 +1,15 @@
-﻿@model BugApp.Models.Bug
+﻿@using Microsoft.AspNetCore.Razor.Language.Intermediate
+@using Microsoft.EntityFrameworkCore.Infrastructure
+@model BugApp.Models.Bug
 
 <h2>Edit</h2>
 
 <hr/>
 
 <form asp-action="Edit" asp-controller="Bug" method="post">
-    
-    
+
+    <p><input asp-for="Id" class="form-control" placeholder="Id" /></p>
+    <p><input asp-for="Name" class="form-control" placeholder="Name" /></p>
     <p>
         <button type="submit" class="btn btn-success">Save</button>
         <a asp-action="Index" asp-controller="Bug">Back to list</a>
